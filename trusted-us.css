@@ -1,0 +1,136 @@
+.trustedUs{
+    padding: 190px 0;
+}
+.trustedUs .trustedUsWrapper{
+    position: relative;
+}
+.trustedUs::before{
+    content: "";
+    background: url(/small-icons/heart-paw-1.svg) center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    width: 100px;
+    height: 100px;
+}
+.trustedUs .trustedUsWrapper h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.trustedUs .trustedUsWrapper .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+    min-height: 600px;
+}
+
+.trustedUs .trustedUsWrapper .item .info{
+    width: calc(50% - 3%);
+}
+.trustedUs .trustedUsWrapper .item .info h3{
+    position: relative;
+    padding-left: 17px;
+}
+.trustedUs .trustedUsWrapper .item .info h3::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: #f7a9a8;
+
+}
+
+.trustedUs .trustedUsWrapper .item .image{
+    width: calc(50% - 3%);
+}
+.trustedUs .trustedUsWrapper .item .image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.changeBgColor{
+    position: relative;
+    color: white;
+}
+.changeBgColor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 101vw;
+    background: #1c1c1c;
+    z-index: -1;
+    transform: translateX(-50%);
+
+}
+
+/* Mobile until 767px */
+
+@media (max-width: 767px) {
+    .trustedUs {
+        padding: 100px 0 0 0;
+    }
+    .trustedUs::before {
+        content: "";
+        background: url(/small-icons/heart-paw-1.svg) center no-repeat;
+        background-size: 100%;
+        position: absolute;
+        right: 12px;
+        top: 122px;
+        width: 65px;
+        height: 66px;
+    }
+    .trustedUs .trustedUsWrapper h2{
+        font-size: 26px;
+        font-weight: 700;
+        padding-right: 50px;
+
+    }
+    .trustedUs .trustedUsWrapper .item {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0;
+        min-height: 600px;
+    }
+    .trustedUs .trustedUsWrapper .item .info {
+        width: 100%;
+    }
+
+    .trustedUs .trustedUsWrapper .item .info h3{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .trustedUs .trustedUsWrapper .item .info span{
+        margin-bottom: 30px;
+    }
+    .trustedUs .trustedUsWrapper .item .image {
+        width: 100%;
+    }
+
+    .trustedUs .trustedUsWrapper .item .image img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        object-fit: cover;
+    }
+    .trustedUs .trustedUsWrapper .item.changeBgColor .image{
+        order: 1;
+    }
+
+
+
+
+
+
+
+
+}

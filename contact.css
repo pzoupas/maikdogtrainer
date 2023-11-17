@@ -1,0 +1,115 @@
+
+/* textContact */
+.textContact{
+    padding: 200px 0;
+    position: relative;
+}
+.textContact::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    background: url(/small-icons/dog-svg-bground.svg) center no-repeat;
+    background-size: 100%;
+    width: 170px;
+    height: 170px;
+}
+
+.contactPage .contact{
+    background: #1c1c1c;
+}
+
+.textContact span{
+    font-size: 30px;
+    line-height: 35px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.textContact p{
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* popup success */
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999999999;
+    
+}
+
+.popup .popupBox{
+    color: white;
+    z-index: 0;
+    background:#02292e;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup .popupBox button{
+    position: absolute;
+    right: -55px;
+    top: -55px;
+    background: url(small-icons/close-btn-white1.png) center no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 0;
+}
+.popup .popupBox p{ margin-bottom: 20px;}
+.popup .popupBox span{
+    background: url(/small-icons/ok-icon64x64.png) center no-repeat;
+    background-size: 100%;
+    width: 64px;
+    height: 64px;
+    display: block;
+    
+}
+.popup .popupBox h3{
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.popup::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 101vh;
+    background: rgba(27, 28, 27, 0.5);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* pointer-events: none; */
+}
+
+@media (max-width: 767px) {
+    .popup .popupBox { 
+        width: 360px;
+        height: 257px;
+    }
+    
+
+    .popup .popupBox span {
+        width: 53px;
+        height: 53px;
+    }
+
+    .popup .popupBox button{
+        position: absolute;
+        right: 6px;
+        top: 6px;    
+        width: 40px;
+        height: 40px;
+    }
+}

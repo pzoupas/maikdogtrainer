@@ -1,0 +1,107 @@
+.services {
+    padding-bottom: 0;
+}
+.services .serviceInfo{
+    padding: 100px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.services h2{
+    margin-bottom: 40px;
+}
+.services .serviceInfo::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100vw;
+    height: 100%;
+    background: none;
+    transition: background 0.3s ease;
+    z-index: -1;
+}
+.services .serviceInfo::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.services .serviceInfo.individualEducation::after {
+    background: url(/small-icons/education.png) center no-repeat;
+    background-size: 100%;
+}
+.services .serviceInfo.groupLessons::after{
+    background: url(/small-icons/school.png) center no-repeat;
+    background-size: 100%;
+}
+.services .serviceInfo.basicCommands::after{
+    background: url(/small-icons/basicCommand.png) center no-repeat;
+    background-size: 100%;
+}
+.services .serviceInfo.behavioralProblems::after{
+    background: url(/small-icons/bite.png) center no-repeat;
+    background-size: 100%;
+}
+.services .serviceInfo.obedienceTraining::after{
+    background: url(/small-icons/dog-training.png) center no-repeat;
+    background-size: 100%;
+}
+.services .serviceInfo.PersonalTrProgr::after{
+    background: url(/small-icons/PersonalTrProgr.png) center no-repeat;
+    background-size: 100%;
+}
+
+
+.services .serviceInfo:hover:before{
+    background: #1c1c1c;  
+}
+.services .serviceInfo h3,
+.services .serviceInfo span{
+    transition: color 0.3s ease;
+    display: block;
+    max-width: 712px;
+}
+.services .serviceInfo:hover h3,
+.services .serviceInfo:hover span{
+    color: white; 
+}
+
+
+
+.services h3{
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    line-height: 35px;
+    margin-bottom: 26px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 17px;
+}
+.services h3::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: #f7a9a8;
+}
+
+
+@media (max-width: 767px) {
+    .services .serviceInfo::after{
+        display: none;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .services .serviceInfo::after{
+        display: none;
+    }
+}

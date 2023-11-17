@@ -1,0 +1,977 @@
+/* contact-us */
+
+.contact{
+    padding: 120px 0;
+    color: white;
+    background: white;
+    
+}
+.contact .contact-form{
+    padding: 93px;
+    border-radius:190px 0;
+}
+.contact .contact-form h2{
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin-bottom: 27px;
+    width: 100%;
+    max-width: 100%;
+    order: 1;
+}
+.contact .contact-form label{
+    display: none;
+}
+.contact .contact-form input{
+    border: 1px solid #ffffff;
+    border-radius: 37px;
+    height: 74px;
+    width: 100%;
+    padding-left: 31px;
+    background: #1c1c1c;
+    color: #ffffff;
+    height: 74px;
+    font-size: 21px;
+    letter-spacing: 1.36px;
+    line-height: 21px;
+    padding-left: 31px;
+    margin-bottom: 34px;
+}
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder{
+    color: #ffffff;
+}
+.contact .contact-form textarea{
+    height: 100px;
+    width: 100%;
+    padding: 10px 31px;
+    background: #1c1c1c;
+    color: #ffffff;
+    letter-spacing: 1.36px;
+    line-height: 21px;
+    margin-bottom: 34px;
+    border-radius: 37px;
+    border: 1px solid #ffffff;
+}
+
+
+/* heroBannerSlider */
+
+.heroBannerSlider{
+    margin-top: 70px;
+    min-height: 700px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.heroBannerSlider .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+.heroBannerSlider .overlayText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    color: white;
+
+}
+
+.heroBannerSlider .scrollToNext{
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    width: 26px;
+    height: 16px !important;
+    background: url(small-icons/scrollDownArrowWhite@2x.png) center no-repeat;
+    background-size: contain;
+    z-index: 50;
+    margin-left: -16px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 1.5s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1);
+}
+.heroBannerSlider .scrollToNext span{
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    top: -36px;
+    left: -71px;
+    width: 170px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+}
+
+.heroBannerSlider .slick-track img{
+    height: calc(100vh - 70px) !important;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.heroBannerSlider .slick-dots{
+    display: -webkit- flex;
+    display: -moz- flex;
+    display: -ms- flex;
+    display: -o- flex;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    list-style: none;
+    bottom: 40px;
+    position: absolute;
+    display: none;
+}
+.heroBannerSlider .slick-dots li{
+    margin: 0 0.25rem;
+    background: #fff;
+    border-radius: 50%;
+
+}
+.heroBannerSlider .slick-dots button{
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    /* border: none; */
+    border-radius: 50%;
+    border: 1px solid #000;
+
+}
+.heroBannerSlider .slick-dots li button{
+    background-color: grey;
+    
+}
+.heroBannerSlider .slick-dots li.slick-active button{
+    background-color: tomato;
+}
+.heroBannerSlider .slick-prev,
+.heroBannerSlider .slick-next{
+    display: none !important;
+}
+
+
+.slick-dots{display: none !important;}
+
+
+
+
+
+
+/* newsForDogs Section*/
+.newsForDogs{
+    /* background: #6C6969; */
+    padding: 120px 0;
+}
+.newsForDogs .newsForDogsWrapp {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+}
+.newsForDogs .newsForDogsWrapp .newsInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 50%;
+    padding-right: 4%;
+}
+.newsForDogs .newsForDogsWrapp .newsInfo span{
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+
+
+}
+.newsForDogs .newsForDogsWrapp .newsImage{
+    width: 50%;
+}
+.newsForDogs .newsForDogsWrapp .newsImage img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+/* Frequent Questions Συχνές ερωτήσεις */
+.frequentQuestions{
+    background: #f7a9a8;
+    padding: 120px 0;
+}
+.frequentQuestions h3{
+    margin-bottom: 65px;
+}
+
+.frequentQuestions .clickBtn{
+    position: relative;
+    border: 1px solid #E1E4EF;
+    border-radius: 39px;
+    background: linear-gradient(to right,#1c1c1c 50%,#E1E4EF 50.5%) no-repeat 0 0;
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+    background-clip: content-box;
+    margin: 0;
+    transition: color 0.3s ease,background-position 0.3s ease;
+    color: #1c1c1c;
+    font-weight: 700;
+}
+.frequentQuestions .clickBtn:hover{
+    background-position: 0 0;
+    color: #ffffff;
+}
+
+.frequentQuestions .item{
+    border-bottom: 1px solid #1c1c1c;
+    
+    margin-bottom: 40px;
+}
+.frequentQuestions .itemInside{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-right: 50px;
+}
+.frequentQuestions .itemInside::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(small-icons/Arrow-down-black-collapse.svg) center no-repeat;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.frequentQuestions .itemInside[aria-expanded="true"]::before{
+    transform: rotate(180deg);
+
+}
+.frequentQuestions .item .itemInside h4{
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+.frequentQuestions .item span{
+    display: block;
+    margin-bottom: 40px;
+}
+
+/* bio */
+.bio{
+    padding: 120px 0;
+    background: #1c1c1c;
+    color: white;
+}
+.bio .bioWrap{
+    display: flex;
+}
+.bio .bioWrap .bioText{
+    width: 50%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bio .bioWrap .bioImages{
+    width: 50%;
+    position: relative;
+}
+
+.bio .bioWrap .bioImages img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.bio .bioWrap button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: aqua;
+    z-index: 9999;
+
+}
+.bio .bioWrap button.slick-next{
+    left: 100px;
+    height: 72px;
+    width: 72px;
+    border: 1.5px solid #D2D6E2;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 0;
+    transition: background-color 0.3s ease;
+}
+.bio .bioWrap button.slick-next::before{
+    content: "";
+    padding: 3px;
+    border: 2px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    margin-left: -2px;
+    border-top-color: white;
+    border-right-color: white;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.bio .bioWrap button.slick-prev{
+    right:-70px ;
+    height: 72px;
+    width: 72px;
+    border: 1.5px solid #D2D6E2;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 0;
+    transition: background-color 0.3s ease;
+}
+.bio .bioWrap button.slick-prev::before{
+    content: "";
+    padding: 3px;
+    border: 2px solid transparent;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-135deg);
+    margin-left: -2px;
+    border-top-color: white;
+    border-right-color: white;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: border-color 0.3s ease;
+}
+.bio .bioWrap button.slick-next:hover,
+.bio .bioWrap button.slick-prev:hover{
+    background-color: #f7a9a8;
+}
+
+/* video */
+.videoContent {
+   position: relative;
+}
+.videoContent .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/*  svg animation  */
+
+.iconsAnimation .icon{
+    display: flex;
+    flex-direction: column;
+    color: #31e8ff;
+    align-items: center;
+}
+
+.iconsAnimation .icon span{
+    display: block;
+    font-size: 30px;
+    margin-top: 25px;
+    position: relative;
+
+}
+.iconsAnimation .icon span::before{
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease;
+    background: #31e8ff;
+
+}
+.iconsAnimation .icon:hover span::before{
+    width: 100%;
+    
+}
+
+.iconsAnimation{
+    /* padding: 120px 0; */
+    background: #06181f;
+    background: #06181f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.iconsAnimation h3{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    /* width: 100%; */
+    transform: translate(-50%, 50%);
+    display: block;
+    color: #31e8ff;
+    text-align: center;
+}
+.iconsAnimation .iconsAnimationWrapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.iconsAnimationWrapp  .icon{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    
+}
+
+.iconsAnimationWrapp  .icon path{
+    fill: transparent;
+    stroke-width: 20px;
+    stroke: #31e8ff;
+    
+}
+
+.iconsAnimationWrapp .icon.heart path{
+    stroke-dasharray: 14355;
+    stroke-dashoffset: 0;
+    stroke-width: 36px;
+}
+.iconsAnimationWrapp .icon.heart:hover path{
+    animation: animate-heart 3s linear forwards;
+}
+
+@keyframes animate-heart{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 14355;
+    }
+    80%{
+        stroke-dashoffset: 28710;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 28710;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dog path#headElement{
+    stroke-dasharray: 1651;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#headElement{
+    animation: animate-person-head 3s linear forwards;
+}
+
+@keyframes animate-person-head{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1651;
+    }
+    80%{
+        stroke-dashoffset: 3302;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3302;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dog path#bodyElement{
+    stroke-dasharray: 12406;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#bodyElement{
+    animation: animate-person-body 3s linear forwards;
+}
+
+@keyframes animate-person-body{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 12406;
+    }
+    80%{
+        stroke-dashoffset: 24812;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 24812;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dog path#headDogElement{
+    stroke-dasharray: 2119;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#headDogElement{
+    animation: animate-dog-headElement 3s linear forwards;
+}
+
+@keyframes animate-dog-headElement{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2119;
+    }
+    80%{
+        stroke-dashoffset: 4238;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 4238;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dog path#bodyDogElement1{
+    stroke-dasharray: 3070;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#bodyDogElement1{
+    animation: animate-dog-Element1 3s linear forwards;
+}
+
+@keyframes animate-dog-Element1{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 3070;
+    }
+    80%{
+        stroke-dashoffset: 6140;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 6140;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dog path#bodyDogElement2{
+    stroke-dasharray: 1437;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#bodyDogElement2{
+    animation: animate-dog-Element2 3s linear forwards;
+}
+
+@keyframes animate-dog-Element2{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1437;
+    }
+    80%{
+        stroke-dashoffset: 2874;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 2874;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dog path#bodyDogElement3{
+    stroke-dasharray: 823;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#bodyDogElement3{
+    animation: animate-dog-Element3 3s linear forwards;
+}
+
+@keyframes animate-dog-Element3{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 823;
+    }
+    80%{
+        stroke-dashoffset: 1646;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 1646;
+        fill:#31e8ff
+    }
+
+}
+
+
+.iconsAnimationWrapp .icon.dog path#bodyDogElement4{
+    stroke-dasharray: 844;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dog:hover path#bodyDogElement4{
+    animation: animate-dog-Element4 3s linear forwards;
+}
+
+@keyframes animate-dog-Element4{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 844;
+    }
+    80%{
+        stroke-dashoffset: 1688;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 1688;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dogTrainer path#headTrainer{
+    stroke-dasharray: 1424;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dogTrainer:hover path#headTrainer{
+    animation: animate-headTrainer 3s linear forwards;
+}
+
+@keyframes animate-headTrainer{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1424;
+    }
+    80%{
+        stroke-dashoffset: 2848;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 2848;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dogTrainer path#bodyTrainer{
+    stroke-dasharray: 9112;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dogTrainer:hover path#bodyTrainer{
+    animation: animate-bodyTrainer 3s linear forwards;
+}
+
+@keyframes animate-bodyTrainer{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 9112;
+    }
+    80%{
+        stroke-dashoffset: 18224;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 18224;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dogTrainer path#earDog{
+    stroke-dasharray: 492;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dogTrainer:hover path#earDog{
+    animation: animate-earDog 3s linear forwards;
+}
+
+@keyframes animate-earDog{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 492;
+    }
+    80%{
+        stroke-dashoffset: 984;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 984;
+        fill:#31e8ff
+    }
+
+}
+
+.iconsAnimationWrapp .icon.dogTrainer path#bodyDog{
+    stroke-dasharray: 4224;
+    stroke-dashoffset: 0;
+}
+.iconsAnimationWrapp .icon.dogTrainer:hover path#bodyDog{
+    animation: animate-bodyDog 3s linear forwards;
+}
+
+@keyframes animate-bodyDog{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 4224;
+    }
+    80%{
+        stroke-dashoffset: 8448;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 8448;
+        fill:#31e8ff
+    }
+
+}
+
+
+.faIconLink {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: block;
+    color: #31e8ff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.faIconLink a{
+    margin: 0 30px;
+}
+
+/* .layout-container #preloader {
+    background: #000 url(/svg-icons/bone-grey.gif) center no-repeat;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999;
+} */
+
+
+
+/* Mobile until 767px */
+
+@media (max-width: 767px) {
+
+    .heroBannerSlider{
+        min-height: unset;
+    }
+    .heroBannerSlider .overlayText{
+        width: 100%;
+    }
+
+    .heroBannerSlider .overlayText h2{
+        text-align: center;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .heroBannerSlider .overlayText .slick-track{
+        width: 100%;
+    }
+
+    .newsForDogs {
+        
+        padding: 70px 0;
+    }
+
+    .newsForDogs .newsForDogsWrapp {
+        flex-direction: column;;
+    }
+    .newsForDogs .newsForDogsWrapp .newsInfo,
+    .newsForDogs .newsForDogsWrapp .newsImage{
+        width: 100%;
+        padding-right: 0;
+    }
+    .newsForDogs .newsForDogsWrapp .newsInfo{order: 1;}
+
+    .newsForDogs .newsForDogsWrapp .newsInfo h3{
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .newsForDogs .newsForDogsWrapp .newsInfo a{
+        margin: 30px 0;
+    }
+
+    .iconsAnimation{
+        padding: 70px 0;
+        height: 100%;
+    }
+    .iconsAnimation h3{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: initial;
+        margin-bottom: 90px;
+    }
+    .iconsAnimation .iconsAnimationWrapp {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .iconsAnimationWrapp .icon {
+        width: 270px;
+        height: 270px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .iconsAnimationWrapp .icon:last-child{
+        margin-bottom: 0;
+    }
+
+    .iconsAnimation .icon span{
+        font-size: 22px;
+    }
+
+    .faIconLink {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: block;
+        color: #31e8ff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .faIconLink a{
+        margin: 0 20px;
+    }
+
+    .bio {
+        padding: 70px 0;
+    }
+    .bio h3{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .bio .bioWrap {
+        flex-direction: column;
+    }
+    .bio .bioWrap .bioText {
+        width: 100%;
+        padding-right: 0;
+       
+    }
+    .bio .bioWrap .bioText p{
+        margin-bottom: 15px;
+        line-height: 21px;
+        font-size: 16px;
+    }
+    .bio .bioWrap .bioImages {
+        width: 100%;
+        position: relative;
+    }
+
+    .contact{
+        padding: 70px 0;
+        background: #1c1c1c;
+    }
+    .contact .contact-form {
+        padding: 0;
+        border-radius:none;
+    }
+    .contact .contact-form h2{
+        font-size: 30px;
+        letter-spacing: 0.2px;
+        line-height: 35px
+        
+    }
+        
+
+    .frequentQuestionsWrapp h3{font-size: 30px;}
+
+    .frequentQuestions .item .itemInside h4{
+        font-size: 18px;
+    }
+
+    .videoContent {
+        max-height: 500px;
+    }
+
+    video {
+        height: 500px;
+        object-fit: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
